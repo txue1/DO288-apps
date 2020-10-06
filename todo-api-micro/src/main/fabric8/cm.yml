@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: todo-api-s2i-1-ca
+data:
+  DATABASE_USER: todoapp
+  DATBASE_PASSWORD: redhat123
+  DATBASE_SVC_HOSTNAME: tododb
+  DATABASE_NAME: todo
+
