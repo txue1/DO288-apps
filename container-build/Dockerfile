@@ -8,7 +8,7 @@ LABEL  io.k8s.description="A basic Apache HTTP Server child image, use ONBUILD" 
 
 EXPOSE 8080
 
-RUN   sed -i "s/Listen 80/Listen 8080/g" /etc/httpd/httpd.conf && \
+RUN   sed -i "s/Listen 80/Listen 8080/g" /etc/httpd/conf/httpd.conf && \
       chgrp -R 0 /var/log/httpd /var/run/httpd && \
       chown g=u /var/log/httpd /var/run/httpd
 
